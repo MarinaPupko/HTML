@@ -3,44 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
 <title>Document</title>
 </head>
 
 <body>
 <header class="container">
  <div class="conteiner_inner">
-    <div class="conteiner_logo"><h3>CV</h3></div>
+    <div class="conteiner_logo"><h1>CV</h1></div>
     <nav class="list">
-    <h6>
-        <a class="listItem" href="#personal information">ABOUT ME</a>
-        <a class="listItem" href="#skills">SKILLS</a>
-        <a class="listItem" href="#projects">PERSONAL PROJECTS</a>
-        <a class="listItem" href="#education">EDUCATION</a>
-        <a class="listItem" href="#languages">LANGUAGES</a>
-        <a class="listItem" href="#interests">INTERESTS</a>
-        <a class="listItem" href="#contacts">CONTACTS</a>
-    </h6>
+        <h6>
+         <ul>
+             <li><a class="listItem" href="#personal_information">ABOUT ME</a></li>
+             <li><a class="listItem" href="#skills">SKILLS</a></li>
+             <li><a class="listItem" href="#projects">PERSONAL PROJECTS</a></li>
+             <li><a class="listItem" href="#education">EDUCATION</a></li>
+             <li><a class="listItem" href="#languages">LANGUAGES</a></li>
+             <li><a class="listItem" href="#interests">INTERESTS</a></li>
+             <li><a class="listItem" href="#contacts">CONTACTS</a></li>
+         </ul>
+        </h6>
     </nav>
  </div>
 <hr class="hr-line">
-<div class="top">
-    <img class="logo" src="logo.PNG" alt="Marina Pupko" weidth="180" height="180" hspace="10">
-    <span class="topItem1" id="name"><p><h4>MARINA PUPKO</h4></p></span>
-    <span class="topItem2" id="profession">JavaScript developer</span>
-    &emsp;<a class="button" href="https://www.linkedin.com/in/marina-pupko/" target="_blank"><p id="company">LinkedIn account</p></a>
-    <span class="topItem3" id="personal_information"><p>Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span></p>
-
-</div>
 </header>
 
-     <div class="left">
-     </div>
-     <div class="right">
+<main>
+    <div class="right">
+<section class="top">
+    <img class="top_icon" src="icon.PNG" alt="MARINA PUPKO">
+    <span class="topItem1" id="name"><h4>MARINA PUPKO</h4></span>
+    <span class="topItem2" id="profession">JavaScript developer</span>
+    &emsp;<a class="button" href="https://www.linkedin.com/in/marina-pupko/" target="_blank"><p id="company">LinkedIn account</p></a>
+    <p><span class="topItem3" id="personal_information">Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span></p>
+</section>
 
-<section id="skills">
-        <h2 class="skills">SKILLS</h2>
+<article class="article">
+<section id="skills" class="skills">
+        <div class="б"><h2>SKILLS</h2></div>
         <p>
             <ul>
              <li>C++</li>
@@ -55,20 +55,23 @@
         </p>
 </section>
 
-<section id="projects">
-        <h2>PERSONAL PROJECTS</h2>
+<section id="projects" class="projects">
+        <div class="projects_headline"><h2>PERSONAL PROJECTS</h2></div>
             <ul>
-                <li>Python HTML parser</li>
+                <li>Python HTML parser
                 <p>Python script for collecting text information from spesific web resources by http GET method. Realized by using such python libriares as httpRequest. beautifulSoup.</p>
-                <li>Implementation of physical model on python</li>
+                </li>
+                <li>Implementation of physical model on python
                 <p>a python script describing a physical model of a double pendulum using OOP approaches</p>
-                <li>OOP methods on C++ and Java</li>
+                </li>
+                <li>OOP methods on C++ and Java
                 <p>oject that implements a hierarchy of objects through late binding and polymorphism using OOP methods</p>
+                </li>
             </ul>
 </section>
 
-<section id="education">
-        <h2>EDUCATION</h2>
+<section id="education" class="education">
+        <div class="education_headline"><h2>EDUCATION</h2></div>
         <p><h4>Belarusian State University <i>09/2020 - 06/2024 Minsk, Belarus</i> Computer physics</h4></p>
         <p>Thesises
             <ul>
@@ -78,8 +81,8 @@
         </p>
 </section>
 
-<section id="languages">
-        <h2>LANGUAGES</h2>
+<section id="languages" class="languages">
+        <div class="languages_headline"><h2>LANGUAGES</h2></div>
         <p>
             <ul>
                 <li>Written English-<i>Intermediate</i></li> 
@@ -90,19 +93,21 @@
         </p>
 </section>
 
-<section id="interests">
-        <h2>INTERESTS</h2>
+<section id="interests" class="interests">
+        <div class="interests_headline"><h2>INTERESTS</h2></div>
         <p><i>dancing, drawing, self-education, teach, photography, design</i></p>
 </section>
 
-<section id="contacts">
-        <h2>CONTACTS</h2>
-            <img class="gmail" src="gmail.png" alt="marinapupko1530@gmail.com" weidth="15" height="15"> <a href="mailto:marinapupko1530@gmail.com" target="_blank" id="email">marinapupko1530@gmail.com</a>
-            <p><img class="telephone" src="telephone.png" alt="contact" weidth="15" height="15" id="contact">+375 29 3975963</p>
+<section id="contacts" class="contacts">
+        <div class="contact_headline"><h2>CONTACTS</h2></div>
+        <img class="gmail" src="gmail.png" alt="marinapupko1530@gmail.com" weidth="15" height="15"> <a href="mailto:marinapupko1530@gmail.com" target="_blank" id="email">marinapupko1530@gmail.com</a>
+        <p><img class="telephone" src="telephone.png" alt="contact" weidth="15" height="15" id="contact">+375 29 3975963</p>
 </section>
-     </div>
-<div id="footer"></div>
-</body>
+</article>
+</div>
 
-<footer></footer>
+<footer><div id="footer"></div></footer>
+
+</main>
+</body>
 </html>
