@@ -3,106 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <title>Document</title>
 </head>
 
 <body>
 <header class="container">
  <div class="conteiner_inner">
-    <div class="conteiner_logo"><h3>CV</h3></div>
+    <div class="conteiner_logo"><h1>CV</h1></div>
     <nav class="list">
-    <h6>
-        <a class="listItem" href="#personal information">ABOUT ME</a>
-        <a class="listItem" href="#skills">SKILLS</a>
-        <a class="listItem" href="#projects">PERSONAL PROJECTS</a>
-        <a class="listItem" href="#education">EDUCATION</a>
-        <a class="listItem" href="#languages">LANGUAGES</a>
-        <a class="listItem" href="#interests">INTERESTS</a>
-        <a class="listItem" href="#contacts">CONTACTS</a>
-    </h6>
+        <h6>
+         <ul>
+             <li><a class="listItem" href="#personal_information">ABOUT ME</a></li>
+             <li><a class="listItem" href="#skills">SKILLS</a></li>
+             <li><a class="listItem" href="#projects">PERSONAL PROJECTS</a></li>
+             <li><a class="listItem" href="#education">EDUCATION</a></li>
+             <li><a class="listItem" href="#languages">LANGUAGES</a></li>
+             <li><a class="listItem" href="#interests">INTERESTS</a></li>
+             <li><a class="listItem" href="#contacts">CONTACTS</a></li>
+         </ul>
+        </h6>
     </nav>
  </div>
 <hr class="hr-line">
-<div class="top">
-    <img class="logo" src="logo.PNG" alt="Marina Pupko" weidth="180" height="180" hspace="10">
-    <span class="topItem1" id="name"><p><h4>MARINA PUPKO</h4></p></span>
-    <span class="topItem2" id="profession">JavaScript developer</span>
-    &emsp;<a class="button" href="https://www.linkedin.com/in/marina-pupko/" target="_blank"><p id="company">LinkedIn account</p></a>
-    <span class="topItem3" id="personal_information"><p>Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span></p>
-
-</div>
 </header>
 
-     <div class="left">
-     </div>
-     <div class="right">
+<main>
+    <div class="header">
+<section class="top">
+    <div class="topItem">Hello, My Name Is</div>
+    <div class="topItem1" id="name">MARINA PUPKO</div>
+    <div class="line"><span class="topItem2" id="profession">A Front-end JavaScript Developer</span></div>
+    <a class="button" href="https://www.linkedin.com/in/marina-pupko/" target="_blank" id="company">LEARN MORE</a>
+</section>  
+    </div>
 
-<section id="skills">
-        <h2 class="skills">SKILLS</h2>
-        <p>
+
+<article class="article">
+    <div class="right">
+        <section class="about_me">
+            <div class="line"><span class="personal_information" id="personal_information">ABOUT ME</span></div>
+    <img class="icon" src="/img/icon.PNG" alt="Marina_Pupko">
+    <span class="information">Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span>
+</section> 
+    <section class="skills" id="skills">
+        <div class="line"><span class="skills_headline">SKILLS</span></div>
+        <div class="skills_inner">
             <ul>
              <li>C++</li>
              <li>MySQL</li>
              <li>SQL</li>
-             <li>Assembly language (basic knowledge)</li>
+             <li>Computer Literacy</li>
              <li>Wolfram (basic knowledge)</li>
              <li>Java(basic knowledge)</li>
              <li>Python (basic knowledge)</li>
-             <li>Computer Literacy</li>
+             <li>Assembly language (basic knowledge)</li>
              </ul>
-        </p>
+        </div>
 </section>
 
-<section id="projects">
-        <h2>PERSONAL PROJECTS</h2>
-            <ul>
-                <li>Python HTML parser</li>
+<section id="projects" class="projects">
+        <div class="projects_headline">PERSONAL PROJECTS</div>
+            <div class="projects_inner">
+                <ul>
+                <li>Python HTML parser
                 <p>Python script for collecting text information from spesific web resources by http GET method. Realized by using such python libriares as httpRequest. beautifulSoup.</p>
-                <li>Implementation of physical model on python</li>
+                </li>
+                <li>Implementation of physical model on python
                 <p>a python script describing a physical model of a double pendulum using OOP approaches</p>
-                <li>OOP methods on C++ and Java</li>
+                </li>
+                <li>OOP methods on C++ and Java
                 <p>oject that implements a hierarchy of objects through late binding and polymorphism using OOP methods</p>
-            </ul>
+                </li>
+                </ul>
+            </div>
 </section>
 
-<section id="education">
-        <h2>EDUCATION</h2>
-        <p><h4>Belarusian State University <i>09/2020 - 06/2024 Minsk, Belarus</i> Computer physics</h4></p>
-        <p>Thesises
+<section id="education" class="education">
+        <div class="education_headline">EDUCATION</div>
+        <p class="university">Belarusian State University <i>09/2020 - 06/2024 Minsk, Belarus</i> Computer physics</p>
+        <div class="education_inner">Thesises
             <ul>
             <li>Light Field Display technology for vision correction</li>
             <li>Inactivation of epidemiologically significant strains of microorganisms in a sterilizer based on an air-plasma jet</li>
             </ul>
-        </p>
+        </div>
 </section>
 
-<section id="languages">
-        <h2>LANGUAGES</h2>
-        <p>
+<section id="languages" class="languages">
+        <div class="languages_headline">LANGUAGES</div>
+        <div class="languages_inner">
             <ul>
-                <li>Written English-<i>Intermediate</i></li> 
-                <li>Spoken English-<i>Pre-Intermediate</i></li>
-                <li>Russian-<i>Native</i></li> 
+                <li>Written English - <i>Intermediate</i></li> 
+                <li>Spoken English - <i>Pre-Intermediate</i></li>
+                <li>Russian - <i>Native</i></li> 
                 <li>Belarusian - <i>Advanced</i></li>
             </ul>
-        </p>
+        </div>
 </section>
 
-<section id="interests">
-        <h2>INTERESTS</h2>
-        <p><i>dancing, drawing, self-education, teach, photography, design</i></p>
+<section id="interests" class="interests">
+        <div class="interests_headline">INTERESTS</div>
+        <i>dancing, drawing, self-education, teach, photography, design</i>
 </section>
 
-<section id="contacts">
-        <h2>CONTACTS</h2>
-            <img class="gmail" src="gmail.png" alt="marinapupko1530@gmail.com" weidth="15" height="15"> <a href="mailto:marinapupko1530@gmail.com" target="_blank" id="email">marinapupko1530@gmail.com</a>
-            <p><img class="telephone" src="telephone.png" alt="contact" weidth="15" height="15" id="contact">+375 29 3975963</p>
+<section id="contacts" class="contacts">
+        <div class="contact_headline"><h2>CONTACTS</h2></div>
+        <img class="gmail" src="gmail.png" alt="marinapupko1530@gmail.com"> <a href="mailto:marinapupko1530@gmail.com" target="_blank" id="email">marinapupko1530@gmail.com</a>
+        <p><img class="telephone" src="telephone.png" alt="contact" id="contact">+375 29 3975963</p>
 </section>
-     </div>
-<div id="footer"></div>
+</div>
+</article>
+<footer><div id="footer"></div></footer>
+</main>
 </body>
-
-<footer></footer>
 </html>
