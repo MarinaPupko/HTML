@@ -11,12 +11,12 @@
 </head>
 
 <body>
-<header class="container">
- <div class="conteiner_inner">
-    <div class="conteiner_logo"><h1>CV</h1></div>
-    <nav class="list">
+<header>
+    <div class="header">
+      <h1 class="header_logo">CV</h1>
+       <nav>
         <h6>
-         <ul>
+          <ul class="list">
              <li><a class="listItem" href="#personal_information">ABOUT ME</a></li>
              <li><a class="listItem" href="#skills">SKILLS</a></li>
              <li><a class="listItem" href="#projects">PERSONAL PROJECTS</a></li>
@@ -24,19 +24,21 @@
              <li><a class="listItem" href="#languages">LANGUAGES</a></li>
              <li><a class="listItem" href="#interests">INTERESTS</a></li>
              <li><a class="listItem" href="#contacts">CONTACTS</a></li>
-         </ul>
-        </h6>
-    </nav>
- </div>
-<hr class="hr-line">
+          </ul>
+         </h6>
+       </nav>
+    </div>
 </header>
 
 <main>
-    <div class="header">
+    <div class="header__inner">
 <section class="top">
     <div class="topItem">Hello, My Name Is</div>
     <div class="topItem1" id="name">MARINA PUPKO</div>
-    <div class="line"><span class="topItem2" id="profession">A Front-end JavaScript Developer</span></div>
+    <div class="topItem2">
+        <div class="rectangle"></div>
+        <div class="profession" id="profession">A Front-end JavaScript Developer</div>
+    </div>
     <a class="button" href="https://www.linkedin.com/in/marina-pupko/" target="_blank" id="company">LEARN MORE</a>
 </section>  
     </div>
@@ -44,30 +46,43 @@
 
 <article class="article">
     <div class="right">
-        <section class="about_me">
-            <div class="line"><span class="personal_information" id="personal_information">ABOUT ME</span></div>
-    <img class="icon" src="/img/icon.PNG" alt="Marina_Pupko">
-    <span class="information">Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span>
+        <section class="about_me" id="personal_information">
+            <img class="icon" src="icon.PNG" alt="Marina_Pupko">
+            <div class="information_container">
+                <div class="information">
+                  <div class="rectangle"></div>
+                  <div class="information_headline" >ABOUT ME</div>
+                </div>
+                <span class="information_inner">Motivated and responsible beginner developer with an orientation towards teamwork. Quick to learn and adapt to new technologies and programming languages. Have excellent communication skills and a keen eye for detail, ensuring high-quality work. Possess perseverance, a drive for perfectionism, and a craving to explore new concepts and technologies.</span>
+            </div>
 </section> 
     <section class="skills" id="skills">
-        <div class="line"><span class="skills_headline">SKILLS</span></div>
+        <div class="skills_container">
+            <div class="rectangle"></div>
+            <div class="skills_headline">SKILLS</div>
+        </div>
         <div class="skills_inner">
             <ul>
-             <li>C++</li>
-             <li>MySQL</li>
-             <li>SQL</li>
-             <li>Computer Literacy</li>
-             <li>Wolfram (basic knowledge)</li>
-             <li>Java(basic knowledge)</li>
-             <li>Python (basic knowledge)</li>
-             <li>Assembly language (basic knowledge)</li>
+             <li><span>C++</span></li>
+             <li><span>MySQL</span></li>
+             <li><span>SQL</span></li>
+             <li><span>Computer Literacy</span></li>
+            </ul>
+             <ul>
+             <li><span>Wolfram</span> (basic knowledge)</li>
+             <li><span>Java</span> (basic knowledge)</li>
+             <li><span>Python</span> (basic knowledge)</li>
+             <li><span>Assembler</span> (basic knowledge)</li>
              </ul>
         </div>
 </section>
 
 <section id="projects" class="projects">
+    <div class="projects_container">
+        <div class="rectangle"></div>
         <div class="projects_headline">PERSONAL PROJECTS</div>
-            <div class="projects_inner">
+    </div>
+    <div class="projects_inner">
                 <ul>
                 <li>Python HTML parser
                 <p>Python script for collecting text information from spesific web resources by http GET method. Realized by using such python libriares as httpRequest. beautifulSoup.</p>
@@ -83,18 +98,24 @@
 </section>
 
 <section id="education" class="education">
+    <div class="education_container">
+        <div class="rectangle"></div>
         <div class="education_headline">EDUCATION</div>
+    </div>
         <p class="university">Belarusian State University <i>09/2020 - 06/2024 Minsk, Belarus</i> Computer physics</p>
         <div class="education_inner">Thesises
             <ul>
-            <li>Light Field Display technology for vision correction</li>
-            <li>Inactivation of epidemiologically significant strains of microorganisms in a sterilizer based on an air-plasma jet</li>
+                <li>Light Field Display technology for vision correction</li>
+                <li>Inactivation of epidemiologically significant strains of microorganisms in a sterilizer based on an air-plasma jet</li>
             </ul>
         </div>
 </section>
 
 <section id="languages" class="languages">
+    <div class="languages_container">
+        <div class="rectangle"></div>
         <div class="languages_headline">LANGUAGES</div>
+    </div>
         <div class="languages_inner">
             <ul>
                 <li>Written English - <i>Intermediate</i></li> 
@@ -106,18 +127,26 @@
 </section>
 
 <section id="interests" class="interests">
+    <div class="interests_container">
+        <div class="rectangle"></div>
         <div class="interests_headline">INTERESTS</div>
+    </div>
         <i>dancing, drawing, self-education, teach, photography, design</i>
-</section>
-
-<section id="contacts" class="contacts">
-        <div class="contact_headline"><h2>CONTACTS</h2></div>
-        <img class="gmail" src="gmail.png" alt="marinapupko1530@gmail.com"> <a href="mailto:marinapupko1530@gmail.com" target="_blank" id="email">marinapupko1530@gmail.com</a>
-        <p><img class="telephone" src="telephone.png" alt="contact" id="contact">+375 29 3975963</p>
 </section>
 </div>
 </article>
-<footer><div id="footer"></div></footer>
+<footer>
+    <div class="footer">
+        <section id="contacts" class="contacts">
+            <div class="contacts_headline">CONTACTS</div>
+            <div class="contacts_inner">
+                <img class="gmail" src="gmail.PNG" alt="marinapupko1530@gmail.com"> <a href="mailto:marinapupko1530@gmail.com" class="gmail_com">marinapupko1530@gmail.com</a>
+                <div><img class="telephone" src="telephone.PNG" alt="contact">+375 29 3975963</div>
+            </div>
+        </section>       
+        <a class="footer_bottom" href="https://marinapupko.github.io/HTML/">&copy;codingCV.com | Desined by Marina Pupko</a>
+     </div>
+</footer>
 </main>
 </body>
 </html>
