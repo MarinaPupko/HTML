@@ -48,7 +48,7 @@ h1.header_logo{
     align-items: center;
     text-transform: uppercase;
 }
-.listItem{
+.list_item{
     position: relative;
     margin: 0 15px;
     vertical-align: top;
@@ -57,7 +57,7 @@ h1.header_logo{
     text-decoration: none;
     transition: color  0.2s linear;
 }
-.listItem:after {
+.list_item:after {
     content: "";
     display: block;
     width: 100%;
@@ -73,14 +73,14 @@ h1.header_logo{
 
     transition: opacity 0.2s linear;
 }
-.listItem:hover {
+.list_item:hover {
     color: #ffaa42;
 }
-.listItem:hover:after,
-.listItem.active:after {
+.list_item:hover:after,
+.list_item.active:after {
     opacity: 1;
 }
-.listItem.active {
+.list_item.active {
     color: #070707;
 }
 .top {
@@ -90,32 +90,32 @@ h1.header_logo{
     min-height:80vh;
     width: 100%;
     background-image: url("../img/pic.png");
-    background-size:cover;
+    background-size:contain;
     background-repeat: no-repeat;
     background-position: top center;
 
 }
-.first-top-Item {
+.first_top_item {
     padding-top: 120px;
     padding-left: 120px;
     font-size:1.5em ;
     font-weight: 170;
     color:#AEAFB5;
 }
-.second-top-Item{
+.second_top_item{
     color: #ffffff;
     padding-top: 20px;
     padding-left: 120px;
     font-size: 3em;
     font-weight:900;
 }
-.third-top-Item {
+.third_top_item {
     display: flex;
     align-items: center;
     width: 100%;
     margin-top: 30px;
 }
-.third-top-Item .rectangle {
+.third_top_item .rectangle {
     height: 1px;
     width: 30px;
     background-color:#ffaa42;  
@@ -386,7 +386,7 @@ footer {
     display: flex;
     text-align: center;
     align-items: center;
-    margin-left: 720px;
+    margin-left: 500px;
     margin-top: 15px;
     color:#ffaa42;
 }
@@ -428,6 +428,21 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
-    margin-left: 500px;
+    margin-left: 600px;
     color:#AEAFB5;
 }
+
+@media screen and (max-width: 1200px){ 
+    body{
+        font-size: large;
+    }
+.top{
+    max-width: 100%;
+    }
+}
+@media screen and (max-width: 960px){ 
+    body{
+        font-size: 140%;
+    }
+}
+
