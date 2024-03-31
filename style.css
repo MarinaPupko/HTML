@@ -19,9 +19,9 @@ img {
 body {
     margin: 0 0;
     padding: 0 0;
-    min-width: 1150px;
+    max-width: 1920px;
     font-family:"Montserrat", sans-serif;
-    font-size: 0.8em;
+    font-size: 1vw;
     border: none;
     font-weight:lighter;
     line-height: 1.6;
@@ -87,18 +87,18 @@ h1.header_logo{
     display: flex;
     align-items:start;
     text-align:start ;
-    min-height:80vh;
+    min-height: 100vh;
     width: 100%;
-    background-image: url("../img/pic.png");
+    background-image: url("./img/pic.png");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: top center;
 
 }
 .first_top_item {
-    padding-top: 120px;
+    padding-top: 80px;
     padding-left: 120px;
-    font-size:1.5em ;
+    font-size:2vw;
     font-weight: 170;
     color:#AEAFB5;
 }
@@ -106,7 +106,7 @@ h1.header_logo{
     color: #ffffff;
     padding-top: 20px;
     padding-left: 120px;
-    font-size: 3em;
+    font-size: 3vw;
     font-weight:900;
 }
 .third_top_item {
@@ -114,6 +114,7 @@ h1.header_logo{
     align-items: center;
     width: 100%;
     margin-top: 30px;
+    font-size: 1.5em;
 }
 .third_top_item .rectangle {
     height: 1px;
@@ -134,7 +135,7 @@ h1.header_logo{
     padding: 10px 18px;
     border: 1px solid #ffaa42;
     border-radius: 80px;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 800;
     color: #ffaa42;
     text-transform: uppercase;
@@ -156,12 +157,10 @@ h1.header_logo{
     float: left;
     width: 20em;
     height: 20em;
-    right: 50px;
 }
 
 .about_me {
     display: flex;
-    align-items: stretch;
     max-width: 100%;
     margin-top: 0;
     align-items: center;
@@ -309,7 +308,7 @@ h1.header_logo{
 }
 .education_inner {
     position:relative;
-    display: inline-block;
+    display: flex;
     padding-top: 5px;
     font-size: 1em;
     font-weight:500;
@@ -377,16 +376,13 @@ h1.header_logo{
 }
 footer {
     display: flex;
+    justify-content: center;
     background:#000000;
     height: 50px; 
     width: 100%;
     border-top:1px solid #ffaa42;
 }
 .contacts {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin-left: 500px;
     margin-top: 15px;
     color:#ffaa42;
 }
@@ -401,10 +397,8 @@ footer {
     font-size: 0.8em;
     text-transform: uppercase;
     width: 100%;
-    margin-left: 5px;
     font-weight: 250;
     color:#ffaa42;
-
 }
 .gmail {
     height: 1.8vh;
@@ -424,25 +418,207 @@ footer {
     margin-right: 5px;
 }
 .footer_bottom {
-    font-size: 0.7em;
+    display: flex;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: center;
-    margin-left: 600px;
+    justify-content: center;
     color:#AEAFB5;
+    font-size: 0.7em;
 }
 
+@media screen and (max-width: 1920px){
+    body{
+        width: 100%;
+    }
+    .top{
+        min-height: 30vh;
+        background-position: right;
+    }
+    .header_burger{
+        display:none;
+    }
+}
 @media screen and (max-width: 1200px){ 
     body{
-        font-size: large;
+        width: 100%;
     }
-.top{
-    max-width: 100%;
+    .list{
+        font-size: 1.5em;
+    }
+    .top{
+        min-height: 30vh;
+        background-position: right;
+    }
+    .header_burger{
+        display:none;
+    }
+    .article{
+        padding-top: 50px;
+    }
+    .right{
+        font-size: 1.5em;
     }
 }
-@media screen and (max-width: 960px){ 
-    body{
-        font-size: 140%;
+@media screen and (max-width: 768px){ 
+    .top{
+        font-size: 0.8em;
+        min-height: 25vh;
+        background-position: right;
+    }
+    .header{
+        min-height: 30px;
+    }
+    .header_burger{
+        display:block;
+        position:relative;
+        width: 25px;
+        height: 21px;
+        right: 5px;
+        border: none;
+        background-color: black;
+    }
+    .header_burger span{
+        content:'';
+        background-color: #ffaa42;
+        position:absolute;
+        width: 100%;
+        height: 2px;
+        left:0;
+        top:9px;
+    }
+    .header_burger::before,
+    .header_burger::after{
+        content:'';
+        background-color: #ffaa42;
+        position:absolute;
+        width: 100%;
+        height: 2px;
+        left:0;
+    }
+    .header_burger::before{
+        top:0;
+    }
+    .header_burger::after{
+        bottom:0;
+    }
+    .right{
+        font-size: 1.7em;
+    }
+    .list{
+        display: block;
+        position: absolute;
+        left: -250px;
+        top: -10px;
+        width: 250px;
+        padding: 20px 20px 20px 20px;
+        background-color: #ffaa42;
+        transition: transform .5s, visibility .5s;
+        will-change: transform;
+    }
+    .list_item{
+        color: #000000;
+        font-size: 2.2em;
+        display: block;
+        padding: 5px 0;
+    }
+    .list_item:after{
+        background-color: none;
+    }
+    .list_item:hover{
+        color: #000000;
+    }
+    .header.open .list{
+        transform: translateX(100%);
+    }
+    .top_container{
+        margin-left: -70px;
+        margin-top: -70px;
+    }
+    .top .button{
+        font-size: 1.4em;
+    }
+    .article{
+        margin-top: 0px;
+    }
+    .information{
+        margin-top: 50px;
+        height: 40px;
+    }
+    .information_container{
+        margin-left: 30px;
+    }
+    .education{
+        margin-top: 40px;
+    }
+    .languages{
+        margin-top: 40px;
+    }
+    .interests{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .footer{
+        font-size: 2em;
+    }
+    .gmail{
+        height: 3.5vh;
+        width: 3.5vh;
+    }
+    .telephone{
+        height: 3.5vh;
+        width: 3.5vh;
     }
 }
-
+@media screen and (max-width: 575px){
+    h1.header_logo{
+        font-size: 2em;
+    }
+    .first_top_item{
+        font-size: 2em;
+    }
+    .second_top_item{
+        font-size: 2em;
+    }
+    .top{
+        background-image: none;
+        font-size: 2em;
+    }
+    h1.header_logo{
+        margin-left: 30px;
+    }
+    .list{
+        width: 200px;
+        left: -200px;
+    }
+    .list_item{
+        display:grid;
+        font-size: 3em;
+    }
+    .right{
+        font-size: 2.3em;
+    }
+    .article{
+        padding-left: 10px;
+    }
+    .about_me{
+        display: block;
+        align-items: center;
+    }
+    .icon{
+        float: left;
+        margin: 50px 20px 20px 20px;
+        width: 25vh;
+        height: 25vh;
+    }
+    .skills{
+        margin-right: 0;
+    }
+    .gmail{
+        height: 1.5vh;
+        width: 1.5vh;
+    }
+    .telephone{
+        height: 1.5vh;
+        width: 1.5vh;
+    }
+}
